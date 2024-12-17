@@ -1,0 +1,130 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h3 class="fst-italic"><mark>Company Name</mark></h3>
+
+
+
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Grid</title>
+    <style>
+        /* Container styles */
+        .container1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+            padding: 20px;
+            gap: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Box styles */
+
+        .boxp {
+            width: 140px; /* Fixed size for consistency */
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            /* Hover effect for boxes */
+            .boxp:hover {
+                transform: scale(1.05);
+                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Image styles */
+            .boxp img {
+                max-width: 105%; /* Ensures the image fits inside the box */
+                max-height: 105%;
+                object-fit: contain; /* Maintains aspect ratio */
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="boxp" id="box-1">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.8vGtcLi2YT_DKiAPCChAwwHaE6&pid=Api&P=0&h=180" alt="services">
+        </div>
+        <div class="boxp" id="box-2">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.sqq80ksm264B7dt5VOwI1QAAAA&pid=Api&P=0&h=180" alt="Services">
+        </div>
+        <div class="boxp" id="box-3">
+            <img src="https://gnci.au/wp-content/uploads/2022/11/civil.png" alt="Services">
+        </div>
+        <div class="boxp" id="box-4">
+            <img src="https://wallpaperaccess.com/full/1615863.jpg" alt="services">
+        </div>
+    </div>
+</body>
+
+<footer style="background-color: #eee6d3;">
+    <div class="container p-4">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-12 mb-4">
+                <h5 class="mb-3 text-dark">We Deliver Best</h5>
+                <p>
+                    Creating lasting, impactful structures that serve society. If you need something
+                    more specific,
+                    like for sustainability or innovation, let me know! 😊
+                </p>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="mb-3 text-dark">Links</h5>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-1">
+                        <a href="#!" style="color: #4f4f4f;">FAQ</a>
+                    </li>
+                    <li class="mb-1">
+                        <a href="#!" style="color: #4f4f4f;">Classes</a>
+                    </li>
+                    <li class="mb-1">
+                        <a href="#!" style="color: #4f4f4f;">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#!" style="color: #4f4f4f;">Safety</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="mb-1 text-dark">Opening Hours</h5>
+                <table class="table table-bordered" style="background-color: white;">
+                    <tbody>
+                        <tr>
+                            <td>Mon - Fri:</td>
+                            <td>8am - 9pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sat - Sun:</td>
+                            <td>8am - 1am</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
